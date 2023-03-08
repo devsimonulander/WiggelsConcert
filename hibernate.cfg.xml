@@ -19,5 +19,6 @@
                 <property name="hbm2ddl.auto">update</property>
                 <!-- vilka klasser ska mappas upp: mapping class="com.mcnz.jpa.examples.Player" / -->
                 <mapping class="se.yalar.Adress" />
+                <mapping class="se.yalar.Arena" />
         </session-factory>
 </hibernate-configuration>
