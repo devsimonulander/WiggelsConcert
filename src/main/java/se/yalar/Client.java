@@ -1,9 +1,15 @@
 package se.yalar;
 
+import jakarta.persistence.Entity;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.GenerationType;
+import jakarta.persistence.Id;
+
 import java.sql.Date;
-
+@Entity
 public class Client {
-
+ @Id
+ @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int clientId;
     private String firstName;
     private String lastName;
@@ -51,4 +57,5 @@ public class Client {
     public void setPhoneNumber(String phoneNumber) {
         this.phoneNumber = phoneNumber;
     }
+
 }
