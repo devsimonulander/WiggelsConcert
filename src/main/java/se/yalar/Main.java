@@ -1,11 +1,17 @@
 package se.yalar;
 
+import org.hibernate.Session;
+import org.hibernate.SessionFactory;
+import org.hibernate.cfg.Configuration;
+import org.hibernate.query.Query;
+
 import java.util.List;
 
 public class Main {
     public static void main(String[] args) {
         System.out.println("Funkaaaa");
         System.out.println("Hej hej");
+
 
 
         Adress adress1 = new Adress("Paradisäppelvägen", 111, 98765, "Ankeborg");
@@ -19,7 +25,7 @@ public class Main {
         Session session = sessionFactory.openSession();
         session.beginTransaction();
 
-        // String dataBase = "CREATE DATABASE IF NOT EXISTS groupTask";
+      String dataBase = "CREATE DATABASE IF NOT EXISTS groupTask";
 
         // Skapa en adresstabell i databasen genom SQL
         String tableAdress = "CREATE TABLE IF NOT EXISTS adress (id int NOT NULL AUTO_INCREMENT PRIMARY KEY, " +
