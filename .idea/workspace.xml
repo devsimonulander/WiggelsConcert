@@ -4,10 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="78fc2f0b-7041-47bc-871f-00d380ac9441" name="Changes" comment="la till klass">
-      <change afterPath="$PROJECT_DIR$/src/main/java/se/yalar/WC.java" afterDir="false" />
+    <list default="true" id="78fc2f0b-7041-47bc-871f-00d380ac9441" name="Changes" comment="la till WC">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hibernate.cfg.xml" beforeDir="false" afterPath="$PROJECT_DIR$/hibernate.cfg.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/se/yalar/WC.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/se/yalar/WC.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -87,7 +86,7 @@
       <workItem from="1678266086934" duration="1625000" />
       <workItem from="1678445500044" duration="1184000" />
       <workItem from="1678696409150" duration="333000" />
-      <workItem from="1678697024015" duration="2552000" />
+      <workItem from="1678697024015" duration="4464000" />
     </task>
     <task id="LOCAL-00001" summary="Changed java version.">
       <created>1678265698667</created>
@@ -114,7 +113,13 @@
       <option name="presentableId" value="LOCAL−00004" />
       <updated>1678273972817</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL−00005" summary="la till WC">
+      <created>1678699773876</created>
+      <option name="number" value="LOCAL−00005" />
+      <option name="presentableId" value="LOCAL−00005" />
+      <updated>1678699773876</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -134,6 +139,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Changed java version." />
     <MESSAGE value="la till klass" />
-    <option name="LAST_COMMIT_MESSAGE" value="la till klass" />
+    <MESSAGE value="la till WC" />
+    <option name="LAST_COMMIT_MESSAGE" value="la till WC" />
   </component>
 </project>
