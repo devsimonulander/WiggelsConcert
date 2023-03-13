@@ -23,6 +23,9 @@ public class Main {
         Client client = new Client();
         client.setFirstName("Saga");
         Adress a1 = new Adress("Husvägen", 456, 2348, "Sverige");
+        Adress a2 = new Adress("Kungsgatan", 65546, 2348, "Sverige");
+        Arena arena = new Arena();
+        arena.setName("Globen");
 
 
         SessionFactory sessionFactory;
@@ -34,6 +37,11 @@ public class Main {
 
         session.persist(a1);
         session.persist(client);
+
+        arena.setAdress(a2);
+
+        session.persist(a2);
+        session.persist(arena);
 
 
 /*      String dataBase = "CREATE DATABASE IF NOT EXISTS groupTask";

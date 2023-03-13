@@ -17,8 +17,8 @@ public class Adress {
      @OneToMany(targetEntity = Client.class, mappedBy = "adress", cascade = CascadeType.ALL)
      private List<Client> clients;
 
-    //@ManyToOne
-    //  private Arena arena;
+    @OneToMany(targetEntity = Arena.class, mappedBy = "adress", cascade = CascadeType.ALL)
+    private List<Arena> arenas;
 
     public Adress() {
     }
@@ -72,6 +72,14 @@ public class Adress {
 
     public void setClients(List<Client> clients) {
         this.clients = clients;
+    }
+
+    public List<Arena> getArenas() {
+        return arenas;
+    }
+
+    public void setArenas(List<Arena> arenas) {
+        this.arenas = arenas;
     }
 
     @Override
