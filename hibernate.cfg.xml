@@ -10,7 +10,7 @@
                 <property name="connection.url">jdbc:mysql://localhost/gruppuppgift</property>
                 <property name="dialect">org.hibernate.dialect.MySQLDialect</property>
                 <property name="connection.username">root</property>
-                <property name="connection.password">****</property>
+                <property name="connection.password">123Golfen</property>
                 <property name="connection.pool_size">3</property>
                 <!--property name="dialect">org.hibernate.dialect.MySQLDialect</property-->
                 <property name="current_session_context_class">thread</property>
@@ -19,6 +19,5 @@
                 <property name="hbm2ddl.auto">update</property>
                 <!-- vilka klasser ska mappas upp: mapping class="com.mcnz.jpa.examples.Player" / -->
                 <mapping class="se.yalar.Adress" />
-                <mapping class="se.yalar.Arena" />
         </session-factory>
 </hibernate-configuration>
