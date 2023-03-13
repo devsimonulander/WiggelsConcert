@@ -5,11 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="78fc2f0b-7041-47bc-871f-00d380ac9441" name="Changes" comment="la till klass">
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hibernate.cfg.xml" beforeDir="false" afterPath="$PROJECT_DIR$/hibernate.cfg.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/se/yalar/Concert.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/se/yalar/Concert.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -61,6 +57,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "C:/Users/Samsung/IdeaProjects/WiggelsConcert",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -86,6 +83,8 @@
       <updated>1678262864763</updated>
       <workItem from="1678262865925" duration="2910000" />
       <workItem from="1678266086934" duration="1625000" />
+      <workItem from="1678445500044" duration="1184000" />
+      <workItem from="1678696409150" duration="333000" />
     </task>
     <task id="LOCAL-00001" summary="Changed java version.">
       <created>1678265698667</created>
