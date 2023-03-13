@@ -20,12 +20,23 @@ public class Main {
         Adress adress4 = new Adress("Bedford Street", 90, 44444, "New York");
         Adress adress5 = new Adress("Malibu Point", 10880, 90265, "Malibu");
 
+        Client client = new Client();
+        client.setFirstName("Saga");
+        Adress a1 = new Adress("Husvägen", 456, 2348, "Sverige");
+
+
         SessionFactory sessionFactory;
         sessionFactory = new Configuration().configure().buildSessionFactory();
         Session session = sessionFactory.openSession();
         session.beginTransaction();
 
-      String dataBase = "CREATE DATABASE IF NOT EXISTS groupTask";
+        client.setAdress(a1);
+
+        session.persist(a1);
+        session.persist(client);
+
+
+/*      String dataBase = "CREATE DATABASE IF NOT EXISTS groupTask";
 
         // Skapa en adresstabell i databasen genom SQL
         String tableAdress = "CREATE TABLE IF NOT EXISTS adress (id int NOT NULL AUTO_INCREMENT PRIMARY KEY, " +
@@ -47,7 +58,7 @@ public class Main {
         List result = query.list();
         for (Object o : result) {
             System.out.println(o.toString());
-        }
+        }*/
 
         session.getTransaction().commit();
         session.close();

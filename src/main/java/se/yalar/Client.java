@@ -1,9 +1,6 @@
 package se.yalar;
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.GenerationType;
-import jakarta.persistence.Id;
+import jakarta.persistence.*;
 
 import java.sql.Date;
 @Entity
@@ -15,6 +12,9 @@ public class Client {
     private String lastName;
     private Date birthday;
     private String phoneNumber;
+    @ManyToOne
+    @JoinColumn(name = "adressId")
+    private Adress adress;
 
     public Client(){}
 
@@ -58,4 +58,15 @@ public class Client {
         this.phoneNumber = phoneNumber;
     }
 
+    public void setBirthday(Date birthday) {
+        this.birthday = birthday;
+    }
+
+    public Adress getAdress() {
+        return adress;
+    }
+
+    public void setAdress(Adress adress) {
+        this.adress = adress;
+    }
 }
