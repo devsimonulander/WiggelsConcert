@@ -4,13 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="78fc2f0b-7041-47bc-871f-00d380ac9441" name="Changes" comment="la till WC">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hibernate.cfg.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/se/yalar/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/se/yalar/Main.java" afterDir="false" />
-    </list>
+    <list default="true" id="78fc2f0b-7041-47bc-871f-00d380ac9441" name="Changes" comment="Flyttat hibernate" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -108,7 +102,7 @@
       <workItem from="1678445500044" duration="1184000" />
       <workItem from="1678696409150" duration="333000" />
       <workItem from="1678697024015" duration="4464000" />
-      <workItem from="1678702168781" duration="1108000" />
+      <workItem from="1678702168781" duration="1286000" />
     </task>
     <task id="LOCAL-00001" summary="Changed java version.">
       <created>1678265698667</created>
@@ -141,7 +135,13 @@
       <option name="presentableId" value="LOCAL−00005" />
       <updated>1678699773876</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL−00006" summary="Flyttat hibernate">
+      <created>1678703335619</created>
+      <option name="number" value="LOCAL−00006" />
+      <option name="presentableId" value="LOCAL−00006" />
+      <updated>1678703335619</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -162,6 +162,7 @@
     <MESSAGE value="Changed java version." />
     <MESSAGE value="la till klass" />
     <MESSAGE value="la till WC" />
-    <option name="LAST_COMMIT_MESSAGE" value="la till WC" />
+    <MESSAGE value="Flyttat hibernate" />
+    <option name="LAST_COMMIT_MESSAGE" value="Flyttat hibernate" />
   </component>
 </project>
