@@ -16,7 +16,7 @@ work
 *.iws
 *.iml
 *.ipr
-
+hibernate.cfg.xml
 ### Eclipse ###
 .apt_generated
 .classpath
