@@ -1,9 +1,9 @@
 package se.yalar;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
+import jakarta.persistence.Entity;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.GenerationType;
+import jakarta.persistence.Id;
 
 @Entity
 public class Arena {
@@ -11,7 +11,7 @@ public class Arena {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private long id;
     private String name;
-    private String address;
+    private int addressId;
     private String type; // Ex: inside/outside/etc...
 
     public Arena() {
@@ -34,12 +34,12 @@ public class Arena {
         this.name = name;
     }
 
-    public String getAddress() {
-        return address;
+    public int getAddress() {
+        return addressId;
     }
 
-    public void setAddress(String address) {
-        this.address = address;
+    public void setAddress(int address) {
+        this.addressId = address;
     }
 
     public String getType() {
