@@ -4,9 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="78fc2f0b-7041-47bc-871f-00d380ac9441" name="Changes" comment="la till klass">
+    <list default="true" id="78fc2f0b-7041-47bc-871f-00d380ac9441" name="Changes" comment="Lagt till förhållanden">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/se/yalar/Concert.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/se/yalar/Concert.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/se/yalar/Adress.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/se/yalar/Adress.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/se/yalar/Arena.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/se/yalar/Arena.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/se/yalar/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/se/yalar/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -74,6 +76,11 @@
     ]
   }
 }</component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Samsung\IdeaProjects\WiggelsConcertNY\src\main\resources" />
+    </key>
+  </component>
   <component name="RunManager">
     <configuration default="true" type="JetRunConfigurationType">
       <method v="2">
@@ -99,7 +106,8 @@
       <workItem from="1678266086934" duration="1625000" />
       <workItem from="1678445500044" duration="1184000" />
       <workItem from="1678696409150" duration="333000" />
-      <workItem from="1678697250008" duration="3571000" />
+      <workItem from="1678697024015" duration="4464000" />
+      <workItem from="1678702168781" duration="7247000" />
     </task>
     <task id="LOCAL-00001" summary="Changed java version.">
       <created>1678265698667</created>
@@ -126,7 +134,31 @@
       <option name="presentableId" value="LOCAL−00004" />
       <updated>1678273972817</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL−00005" summary="la till WC">
+      <created>1678699773876</created>
+      <option name="number" value="LOCAL−00005" />
+      <option name="presentableId" value="LOCAL−00005" />
+      <updated>1678699773876</updated>
+    </task>
+    <task id="LOCAL−00006" summary="Flyttat hibernate">
+      <created>1678703335619</created>
+      <option name="number" value="LOCAL−00006" />
+      <option name="presentableId" value="LOCAL−00006" />
+      <updated>1678703335619</updated>
+    </task>
+    <task id="LOCAL−00007" summary="Mappat alla klasser">
+      <created>1678703479628</created>
+      <option name="number" value="LOCAL−00007" />
+      <option name="presentableId" value="LOCAL−00007" />
+      <updated>1678703479628</updated>
+    </task>
+    <task id="LOCAL−00008" summary="Lagt till förhållanden">
+      <created>1678710765529</created>
+      <option name="number" value="LOCAL−00008" />
+      <option name="presentableId" value="LOCAL−00008" />
+      <updated>1678710765529</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -146,6 +178,10 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Changed java version." />
     <MESSAGE value="la till klass" />
-    <option name="LAST_COMMIT_MESSAGE" value="la till klass" />
+    <MESSAGE value="la till WC" />
+    <MESSAGE value="Flyttat hibernate" />
+    <MESSAGE value="Mappat alla klasser" />
+    <MESSAGE value="Lagt till förhållanden" />
+    <option name="LAST_COMMIT_MESSAGE" value="Lagt till förhållanden" />
   </component>
 </project>
