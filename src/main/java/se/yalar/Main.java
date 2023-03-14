@@ -4,7 +4,6 @@ import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.hibernate.cfg.Configuration;
 import org.hibernate.query.Query;
-
 import java.util.List;
 
 public class Main {
@@ -43,30 +42,55 @@ public class Main {
         session.persist(a2);
         session.persist(arena);
 
+      // wc.updateClient(3, "Ida", "Karlsson", "035215886", a2); // Funkar ej
 
-/*      String dataBase = "CREATE DATABASE IF NOT EXISTS groupTask";
+        Client c1 = new Client();
+        Client c2 = new Client();
+        Client c3 = new Client();
+        Client c4 = new Client();
+        Client c5 = new Client();
+        c1.setFirstName("Anna");
+        c2.setFirstName("Pelle");
+        c3.setFirstName("Kajsa");
+        c4.setFirstName("Olle");
+        c5.setFirstName("Sofia");
 
-        // Skapa en adresstabell i databasen genom SQL
-        String tableAdress = "CREATE TABLE IF NOT EXISTS adress (id int NOT NULL AUTO_INCREMENT PRIMARY KEY, " +
-                "street VARCHAR (45), " +
-                "houseNumber int, " +
-                "zipCode int, " +
-                "city VARCHAR(45)) ;";
-        session.createNativeQuery(tableAdress).executeUpdate();
+        Concert concert = new Concert();
+        Concert concert1 = new Concert();
+        Concert concert2 = new Concert();
+        concert.setArtist_name("hfjs");
+        concert1.setArtist_name("Plfji");
+        concert2.setArtist_name("Ssjik");
+/*
+        concert.getClients().add(c1);
+        concert.getClients().add(c2);
+        concert.getClients().add(c3);
 
-        String insertData = "INSERT INTO adress (street, houseNumber, zipCode, city) VALUES " +
-                "('Paradisäppelvägen', 111, 98765, 'Ankeborg'), " +
-                "('Teatergatan', 18, 11122, 'Valleby'), " +
-                "('PrivetDrive', 4, 88888, 'LittleWhinging'), " +
-                "('BedfordStreet', 90, 44444, 'NewYork'), " +
-                "('MalibuPoint', 10880, 90265, 'Malibu')";
-        session.createNativeQuery(insertData).executeUpdate();
+        concert1.getClients().add(c4);
+        concert1.getClients().add(c5);*/
+/*        concert2.getClients().add(c2);
+        concert2.getClients().add(c5);
+        concert2.getClients().add(c3);*/
 
-        Query query = session.createQuery("FROM Adress");
-        List result = query.list();
-        for (Object o : result) {
-            System.out.println(o.toString());
-        }*/
+/*        session.persist(c1);
+        session.persist(c2);
+        session.persist(c3);
+        session.persist(c4);
+        session.persist(c5);
+        session.persist(concert);
+        session.persist(concert1);*/
+       /* session.persist(concert2);*/
+
+
+
+        Query query = session.createQuery("FROM Concert");
+        List<Concert> result = query.list();
+        for(Concert o : result){
+            System.out.println(o.getArtist_name() + " har följande kunder");
+            for(int i = 0; i < o.getClients().size(); i++){
+                System.out.println(o.getClients().get(i).getFirstName());
+            }
+        }
 
         session.getTransaction().commit();
         session.close();
