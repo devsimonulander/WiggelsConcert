@@ -1,9 +1,8 @@
 package se.yalar;
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.GenerationType;
-import jakarta.persistence.Id;
+import jakarta.persistence.*;
+
+import java.util.List;
 
 @Entity
 public class Adress {
@@ -15,11 +14,11 @@ public class Adress {
     private int zipCode;
     private String city;
 
-    // @ManyToOne
-    //private Client client; behövs ett sånt attribut
+     @OneToMany(targetEntity = Client.class, mappedBy = "adress", cascade = CascadeType.ALL)
+     private List<Client> clients;
 
-    //@ManyToOne
-    //  private Arena arena;
+    @OneToMany(targetEntity = Arena.class, mappedBy = "adress", cascade = CascadeType.ALL)
+    private List<Arena> arenas;
 
     public Adress() {
     }
@@ -65,6 +64,22 @@ public class Adress {
 
     public void setCity(String city) {
         this.city = city;
+    }
+
+    public List<Client> getClients() {
+        return clients;
+    }
+
+    public void setClients(List<Client> clients) {
+        this.clients = clients;
+    }
+
+    public List<Arena> getArenas() {
+        return arenas;
+    }
+
+    public void setArenas(List<Arena> arenas) {
+        this.arenas = arenas;
     }
 
     @Override

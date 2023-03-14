@@ -5,7 +5,7 @@ target/
 
 # pom.xml
 
-hibernate.cfg.xml
+src/main/resources/hibernate.cfg.xml
 work
 
 ### IntelliJ IDEA ###
@@ -16,7 +16,7 @@ work
 *.iws
 *.iml
 *.ipr
-hibernate.cfg.xml
+src/main/resources/hibernate.cfg.xml
 ### Eclipse ###
 .apt_generated
 .classpath
