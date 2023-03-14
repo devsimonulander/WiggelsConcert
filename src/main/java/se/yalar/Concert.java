@@ -9,12 +9,12 @@ public class Concert {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private int id;
+    private int concertId;
     private String artist_name;
     private Date date;
     private int price;
     private int age_limit;
-    private String arena;
+    private int arenaId;
 
     public String getArtist_name() {
         return artist_name;
@@ -48,29 +48,29 @@ public class Concert {
         this.age_limit = age_limit;
     }
 
-    public String getArena() {
-        return arena;
+    public int getArena() {
+        return arenaId;
     }
 
-    public void setArena(String arena) {
-        this.arena = arena;
+    public void setArena(int arenaId) {
+        this.arenaId = arenaId;
     }
 
-    public void setId(int id) {
-        this.id = id;
+    public void setConcertId(int id) {
+        this.concertId = id;
     }
-    public int getId() {
-        return id;
+    public int getConcertId() {
+        return concertId;
     }
     @Override
     public String toString() {
         return "Concert{" +
-                "id=" + id +
-                ", artist_name='" + artist_name + '\'' +
-                ", date=" + date +
-                ", price=" + price +
-                ", age_limit=" + age_limit +
-                ", arena='" + arena + '\'' +
+                "id=" + concertId +
+                ", artist namn: ='" + artist_name + '\'' +
+                ", datum " + date +
+                ", pris " + price +
+                ", åldersgräns: " + age_limit +
+                ", arena='" + arenaId + '\'' +
                 '}';
     }
 }
