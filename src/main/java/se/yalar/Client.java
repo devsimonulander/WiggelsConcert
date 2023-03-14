@@ -3,6 +3,9 @@ package se.yalar;
 import jakarta.persistence.*;
 
 import java.sql.Date;
+import java.util.ArrayList;
+import java.util.List;
+
 @Entity
 public class Client {
  @Id
@@ -15,6 +18,12 @@ public class Client {
     @ManyToOne
     @JoinColumn(name = "adressId")
     private Adress adress;
+    @ManyToMany
+    @JoinTable(name = "WC",
+    joinColumns = {@JoinColumn(name = "ClientId")},
+    inverseJoinColumns = {@JoinColumn(name = "ConcertId")})
+    private List<Concert>concerts = new ArrayList<>();
+
 
     public Client(){}
 
@@ -68,5 +77,13 @@ public class Client {
 
     public void setAdress(Adress adress) {
         this.adress = adress;
+    }
+
+    public List<Concert> getConcerts() {
+        return concerts;
+    }
+
+    public void setConcerts(List<Concert> concerts) {
+        this.concerts = concerts;
     }
 }
