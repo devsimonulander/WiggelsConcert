@@ -6,7 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="78fc2f0b-7041-47bc-871f-00d380ac9441" name="Changes" comment="datum, objekt uppdatering">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/se/yalar/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/se/yalar/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -37,7 +36,7 @@
     <option name="selectedUrlAndAccountId">
       <UrlAndAccount>
         <option name="accountId" value="b3a1b36c-3d60-45d5-85c5-00a83d947163" />
-        <option name="url" value="https://github.com/devsimonulander/WiggelsConcert" />
+        <option name="url" value="https://github.com/devsimonulander/WiggelsConcert.git" />
       </UrlAndAccount>
     </option>
   </component>
@@ -185,7 +184,13 @@
       <option name="presentableId" value="LOCAL−00012" />
       <updated>1678890998899</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL−00013" summary="datum, objekt uppdatering">
+      <created>1678894337930</created>
+      <option name="number" value="LOCAL−00013" />
+      <option name="presentableId" value="LOCAL−00013" />
+      <updated>1678894337930</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
