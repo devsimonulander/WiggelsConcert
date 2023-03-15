@@ -88,12 +88,12 @@ public class CRUD {
         }
     }
 
-    public void updateConcert(int concertId, String artist_name, Date date, int price, int age_limit, String arena) {
+    public void updateConcert(int concertId, String artistName, String concertDate, int price, int age_limit, String arena) {
         try (Session session = sessionFactory.openSession()) {
             session.beginTransaction();
             Concert concert = session.get(Concert.class, concertId);
-            concert.setArtist_name(artist_name);
-            concert.setDate(date);
+            concert.setArtistName(artistName);
+            concert.setDate(concertDate);
             concert.setPrice(price);
             concert.setAge_limit(age_limit);
             session.update(concert);

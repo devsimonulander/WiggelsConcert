@@ -11,7 +11,7 @@ public class Concert {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int concertId;
     private String artistName;
-    private Date date;
+    private Date concertDate;
     private int price;
     private int age_limit;
 
@@ -31,11 +31,12 @@ public class Concert {
     }
 
     public Date getDate() {
-        return date;
+        return concertDate;
     }
 
-    public void setDate(Date date) {
-        this.date = date;
+    public void setDate(String date) {
+        Date concertDate = Date.valueOf(date);
+        this.concertDate = concertDate;
     }
 
     public int getPrice() {
@@ -73,7 +74,7 @@ public class Concert {
         return "Concert{" +
                 "id=" + concertId +
                 ", artist namn: ='" + artistName + '\'' +
-                ", datum " + date +
+                ", datum " + concertDate +
                 ", pris " + price +
                 ", åldersgräns: " + age_limit +
                 ", arena='" + arena + '\'' +
