@@ -10,9 +10,6 @@ public class Main {
     public static void main(String[] args) {
         Gameloop gameloop = new Gameloop();
         gameloop.start();
-        System.out.println("Funkaaaa");
-        System.out.println("Hej hej");
-
 
 
         Adress adress1 = new Adress("Paradisäppelvägen", 111, 98765, "Ankeborg");
