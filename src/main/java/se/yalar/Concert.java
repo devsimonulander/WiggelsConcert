@@ -10,18 +10,24 @@ public class Concert {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int concertId;
-    private String artist_name;
+    private String artistName;
     private Date date;
     private int price;
     private int age_limit;
-    private int arenaId;
 
-    public String getArtist_name() {
-        return artist_name;
+    @ManyToOne
+    @JoinColumn(name = "arenaId")
+    private Arena arena;
+
+    public Concert() {
     }
 
-    public void setArtist_name(String artist_name) {
-        this.artist_name = artist_name;
+    public String getArtist_name() {
+        return artistName;
+    }
+
+    public void setArtistName(String artistName) {
+        this.artistName = artistName;
     }
 
     public Date getDate() {
@@ -48,12 +54,12 @@ public class Concert {
         this.age_limit = age_limit;
     }
 
-    public int getArena() {
-        return arenaId;
+    public Arena getArena() {
+        return arena;
     }
 
-    public void setArena(int arenaId) {
-        this.arenaId = arenaId;
+    public void setArena(Arena arena) {
+        this.arena = arena;
     }
 
     public void setConcertId(int id) {
@@ -66,11 +72,11 @@ public class Concert {
     public String toString() {
         return "Concert{" +
                 "id=" + concertId +
-                ", artist namn: ='" + artist_name + '\'' +
+                ", artist namn: ='" + artistName + '\'' +
                 ", datum " + date +
                 ", pris " + price +
                 ", åldersgräns: " + age_limit +
-                ", arena='" + arenaId + '\'' +
+                ", arena='" + arena + '\'' +
                 '}';
     }
 }

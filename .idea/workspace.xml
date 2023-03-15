@@ -4,13 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="78fc2f0b-7041-47bc-871f-00d380ac9441" name="Changes" comment="Lagt till förhållanden igen">
-      <change afterPath="$PROJECT_DIR$/src/main/java/se/yalar/CRUD.java" afterDir="false" />
+    <list default="true" id="78fc2f0b-7041-47bc-871f-00d380ac9441" name="Changes" comment="la till klass">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/se/yalar/Client.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/se/yalar/Client.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/se/yalar/Arena.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/se/yalar/Arena.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/se/yalar/Concert.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/se/yalar/Concert.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/se/yalar/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/se/yalar/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/se/yalar/WC.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/se/yalar/WC.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -56,28 +54,29 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/Samsung/IdeaProjects/WiggelsConcert&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "C:/Users/Samsung/IdeaProjects/WiggelsConcert",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
+    "vue.rearranger.settings.migration": "true"
   },
-  &quot;keyToStringList&quot;: {
-    &quot;DatabaseDriversLRU&quot;: [
-      &quot;mysql&quot;
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "mysql"
     ]
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\Samsung\IdeaProjects\WiggelsConcertNY\src\main\resources" />
@@ -109,7 +108,7 @@
       <workItem from="1678445500044" duration="1184000" />
       <workItem from="1678696409150" duration="333000" />
       <workItem from="1678697024015" duration="4464000" />
-      <workItem from="1678702168781" duration="18595000" />
+      <workItem from="1678702168781" duration="7247000" />
     </task>
     <task id="LOCAL-00001" summary="Changed java version.">
       <created>1678265698667</created>
@@ -160,13 +159,7 @@
       <option name="presentableId" value="LOCAL−00008" />
       <updated>1678710765529</updated>
     </task>
-    <task id="LOCAL−00009" summary="Lagt till förhållanden igen">
-      <created>1678712502755</created>
-      <option name="number" value="LOCAL−00009" />
-      <option name="presentableId" value="LOCAL−00009" />
-      <updated>1678712502755</updated>
-    </task>
-    <option name="localTasksCounter" value="10" />
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -190,7 +183,6 @@
     <MESSAGE value="Flyttat hibernate" />
     <MESSAGE value="Mappat alla klasser" />
     <MESSAGE value="Lagt till förhållanden" />
-    <MESSAGE value="Lagt till förhållanden igen" />
-    <option name="LAST_COMMIT_MESSAGE" value="Lagt till förhållanden igen" />
+    <option name="LAST_COMMIT_MESSAGE" value="Lagt till förhållanden" />
   </component>
 </project>
