@@ -4,8 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="78fc2f0b-7041-47bc-871f-00d380ac9441" name="Changes" comment="la till klass">
+    <list default="true" id="78fc2f0b-7041-47bc-871f-00d380ac9441" name="Changes" comment="Fixat allt">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/se/yalar/CRUD.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/se/yalar/CRUD.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/se/yalar/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/se/yalar/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -62,7 +64,6 @@
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
     &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
     &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
     &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
@@ -105,7 +106,7 @@
       <workItem from="1678445500044" duration="1184000" />
       <workItem from="1678696409150" duration="333000" />
       <workItem from="1678697024015" duration="4464000" />
-      <workItem from="1678702168781" duration="7247000" />
+      <workItem from="1678702168781" duration="23706000" />
     </task>
     <task id="LOCAL-00001" summary="Changed java version.">
       <created>1678265698667</created>
@@ -156,13 +157,19 @@
       <option name="presentableId" value="LOCAL−00008" />
       <updated>1678710765529</updated>
     </task>
-    <task id="LOCAL−00009" summary="la till klass">
-      <created>1678877703986</created>
+    <task id="LOCAL−00009" summary="Lagt till förhållanden igen">
+      <created>1678712502755</created>
       <option name="number" value="LOCAL−00009" />
       <option name="presentableId" value="LOCAL−00009" />
-      <updated>1678877703986</updated>
+      <updated>1678712502755</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL−00010" summary="Fixat allt">
+      <created>1678795584672</created>
+      <option name="number" value="LOCAL−00010" />
+      <option name="presentableId" value="LOCAL−00010" />
+      <updated>1678795584672</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -181,11 +188,13 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Changed java version." />
+    <MESSAGE value="la till klass" />
     <MESSAGE value="la till WC" />
     <MESSAGE value="Flyttat hibernate" />
     <MESSAGE value="Mappat alla klasser" />
     <MESSAGE value="Lagt till förhållanden" />
-    <MESSAGE value="la till klass" />
-    <option name="LAST_COMMIT_MESSAGE" value="la till klass" />
+    <MESSAGE value="Lagt till förhållanden igen" />
+    <MESSAGE value="Fixat allt" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fixat allt" />
   </component>
 </project>
