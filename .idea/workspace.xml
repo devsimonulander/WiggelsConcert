@@ -4,10 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="78fc2f0b-7041-47bc-871f-00d380ac9441" name="Changes" comment="la till klass">
+    <list default="true" id="78fc2f0b-7041-47bc-871f-00d380ac9441" name="Changes" comment="fixade datum">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/se/yalar/CRUD.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/se/yalar/CRUD.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/se/yalar/Concert.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/se/yalar/Concert.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/se/yalar/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/se/yalar/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -22,6 +22,11 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="main" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="GitHubPullRequestSearchHistory">{
@@ -169,7 +174,13 @@
       <option name="presentableId" value="LOCAL−00010" />
       <updated>1678795584672</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL−00011" summary="fixade datum">
+      <created>1678881939187</created>
+      <option name="number" value="LOCAL−00011" />
+      <option name="presentableId" value="LOCAL−00011" />
+      <updated>1678881939187</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -188,13 +199,14 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Changed java version." />
-    <MESSAGE value="la till klass" />
     <MESSAGE value="la till WC" />
     <MESSAGE value="Flyttat hibernate" />
     <MESSAGE value="Mappat alla klasser" />
     <MESSAGE value="Lagt till förhållanden" />
     <MESSAGE value="Lagt till förhållanden igen" />
     <MESSAGE value="Fixat allt" />
-    <option name="LAST_COMMIT_MESSAGE" value="Fixat allt" />
+    <MESSAGE value="la till klass" />
+    <MESSAGE value="fixade datum" />
+    <option name="LAST_COMMIT_MESSAGE" value="fixade datum" />
   </component>
 </project>

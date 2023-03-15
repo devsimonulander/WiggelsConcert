@@ -21,6 +21,7 @@ public class Main {
         Adress adress4 = new Adress("Bedford Street", 90, 44444, "New York");
         Adress adress5 = new Adress("Malibu Point", 10880, 90265, "Malibu");
 
+
         Client client = new Client();
         client.setFirstName("Saga");
         Adress a1 = new Adress("Husvägen", 456, 2348, "Sverige");
@@ -28,6 +29,12 @@ public class Main {
         Arena arena = new Arena();
         arena.setName("Globen");
 
+
+        Concert concert1 = new Concert("The Strokes","02/07/2023",900,arena,18);
+        Concert concert2 = new Concert("The Clash","05/09/2023",1200,arena,21);
+        Concert concert3 = new Concert("Pink Floyd","07/04/2023",1800,arena,21);
+        Concert concert4 = new Concert("The White Stripes","03/06/2024",900,arena,18);
+        Concert concert5 = new Concert("Babblarna","08/07/2024",9999,arena,3);
 
         SessionFactory sessionFactory;
         sessionFactory = new Configuration().configure().buildSessionFactory();

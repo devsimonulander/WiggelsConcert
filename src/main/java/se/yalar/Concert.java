@@ -22,7 +22,14 @@ public class Concert {
     public Concert() {
     }
 
-    public String getArtist_name() {
+    public Concert(String artistName, String concertDate, int price,Arena arena, int age_limit) {
+        this.artistName = artistName;
+        this.concertDate = Date.valueOf(concertDate);
+        this.price = price;
+        this.arena = arena;
+        this.age_limit = age_limit;
+    }
+    public String getArtistName() {
         return artistName;
     }
 
