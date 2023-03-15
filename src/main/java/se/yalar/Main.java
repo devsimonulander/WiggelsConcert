@@ -4,13 +4,14 @@ import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.hibernate.cfg.Configuration;
 import org.hibernate.query.Query;
+
+import java.sql.Date;
 import java.util.List;
 
 public class Main {
     public static void main(String[] args) {
-        //Gameloop gameloop = new Gameloop();
-        //gameloop.start();
-
+        Gameloop gameloop = new Gameloop();
+        gameloop.start();
 
         Adress adress1 = new Adress("Paradisäppelvägen", 111, 98765, "Ankeborg");
         Adress adress2 = new Adress("Teatergatan", 18, 11122, "Valleby");
@@ -28,12 +29,12 @@ public class Main {
         Arena arena = new Arena();
         arena.setName("Globen");
 
-
-        Concert concert1 = new Concert("The Strokes","02/07/2023",900,arena,18);
-        Concert concert2 = new Concert("The Clash","05/09/2023",1200,arena,21);
+        var date = new Date(2024, 01, 02);
+        Concert concert1 = new Concert("The Strokes",date,900,arena,18);
+     /*   Concert concert2 = new Concert("The Clash","05/09/2023",1200,arena,21);
         Concert concert3 = new Concert("Pink Floyd","07/04/2023",1800,arena,21);
         Concert concert4 = new Concert("The White Stripes","03/06/2024",900,arena,18);
-        Concert concert5 = new Concert("Babblarna","08/07/2024",9999,arena,3);
+        Concert concert5 = new Concert("Babblarna","08/07/2024",9999,arena,3);*/
 
         SessionFactory sessionFactory;
         sessionFactory = new Configuration().configure().buildSessionFactory();
@@ -116,7 +117,6 @@ public class Main {
                 System.out.println(o.getClients().get(i).getFirstName());
             }
         }*/
-
         session.getTransaction().commit();
         session.close();
     }

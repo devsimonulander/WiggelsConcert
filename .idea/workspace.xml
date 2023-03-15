@@ -4,9 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="78fc2f0b-7041-47bc-871f-00d380ac9441" name="Changes" comment="datum, objekt uppdatering">
+    <list default="true" id="78fc2f0b-7041-47bc-871f-00d380ac9441" name="Changes" comment="nya adresser">
       <change afterPath="$PROJECT_DIR$/hibernate.cfg.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/se/yalar/Concert.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/se/yalar/Concert.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/se/yalar/Gameloop.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/se/yalar/Gameloop.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/se/yalar/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/se/yalar/Main.java" afterDir="false" />
     </list>
@@ -65,14 +66,14 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "C:/Tools/WiggelsConcert4",
+    "last_opened_file_path": "C:/Tools/WiggelsConcert1",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
-    "project.structure.last.edited": "Project",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
     "vue.rearranger.settings.migration": "true"
   },
   "keyToStringList": {
@@ -91,6 +92,19 @@
     </key>
   </component>
   <component name="RunManager">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="se.yalar.Main" />
+      <module name="WiggelsConcert" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="se.yalar.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration default="true" type="JetRunConfigurationType">
       <method v="2">
         <option name="Make" enabled="true" />
@@ -102,6 +116,11 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Main" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -203,7 +222,13 @@
       <option name="presentableId" value="LOCAL−00014" />
       <updated>1678905651951</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL−00015" summary="nya adresser">
+      <created>1678908968786</created>
+      <option name="number" value="LOCAL−00015" />
+      <option name="presentableId" value="LOCAL−00015" />
+      <updated>1678908968786</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -231,6 +256,12 @@
     <MESSAGE value="la till klass" />
     <MESSAGE value="fixade datum" />
     <MESSAGE value="datum, objekt uppdatering" />
-    <option name="LAST_COMMIT_MESSAGE" value="datum, objekt uppdatering" />
+    <MESSAGE value="nya adresser" />
+    <option name="LAST_COMMIT_MESSAGE" value="nya adresser" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/WiggelsConcert4$Main.ic" NAME="Main Coverage Results" MODIFIED="1678915534601" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>se.yalar.*</FILTER>
+    </SUITE>
   </component>
 </project>
