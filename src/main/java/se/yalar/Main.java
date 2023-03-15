@@ -43,7 +43,24 @@ public class Main {
         session.persist(arena);
 
       // wc.updateClient(3, "Ida", "Karlsson", "035215886", a2); // Funkar ej
+        CRUD crud = new CRUD(sessionFactory);
+/*        List<Adress> cons = crud.getAllAdresses();
+        for(int i = 0; i < cons.size(); i++){
+            System.out.println(cons.get(i).getStreet());
+        }
+        crud.updateAdress(6, "Husvägen", 3456, 89046, "Sverige");*/
+        //crud.updateClient(5, "Peter", "Kil", "046598723", "Koklvägen", 56874, 5223, "Berg");
+        crud.updateArena(1, "Ullevi", "Ute", "Göteborgsvägen", 46792, 850, "Göteborg");
+    /*    Concert co = crud.getConcertById(4);
+        System.out.println(co.getArtist_name());
 
+
+        Concert c1 = new Concert();
+        c1.setArtist_name("jgkln");
+
+        crud.addConcert(c1);
+        crud.deleteConcert(4);*/
+/*
         Client c1 = new Client();
         Client c2 = new Client();
         Client c3 = new Client();
@@ -60,7 +77,7 @@ public class Main {
         Concert concert2 = new Concert();
         concert.setArtist_name("hfjs");
         concert1.setArtist_name("Plfji");
-        concert2.setArtist_name("Ssjik");
+        concert2.setArtist_name("Ssjik");*/
 /*
         concert.getClients().add(c1);
         concert.getClients().add(c2);
@@ -80,7 +97,7 @@ public class Main {
         session.persist(concert);
         session.persist(concert1);*/
        /* session.persist(concert2);*/
-
+/*
 
 
         Query query = session.createQuery("FROM Concert");
@@ -90,7 +107,7 @@ public class Main {
             for(int i = 0; i < o.getClients().size(); i++){
                 System.out.println(o.getClients().get(i).getFirstName());
             }
-        }
+        }*/
 
         session.getTransaction().commit();
         session.close();
