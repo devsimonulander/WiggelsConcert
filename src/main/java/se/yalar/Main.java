@@ -8,8 +8,8 @@ import java.util.List;
 
 public class Main {
     public static void main(String[] args) {
-        Gameloop gameloop = new Gameloop();
-        gameloop.start();
+        //Gameloop gameloop = new Gameloop();
+        //gameloop.start();
 
 
         Adress adress1 = new Adress("Paradisäppelvägen", 111, 98765, "Ankeborg");
@@ -17,7 +17,9 @@ public class Main {
         Adress adress3 = new Adress("Privet Drive", 4, 88888, "Little Whinging");
         Adress adress4 = new Adress("Bedford Street", 90, 44444, "New York");
         Adress adress5 = new Adress("Malibu Point", 10880, 90265, "Malibu");
-
+        Adress adress6 = new Adress("Ullevivägen", 5, 41139, "Göteborg");
+        Adress adress7 = new Adress("Universitetsallén", 6, 85234, "Sundsvall");
+        Adress adress8 = new Adress("Globentorget", 1, 12177, "Johanneshov");
 
         Client client = new Client();
         client.setFirstName("Saga");
@@ -42,7 +44,7 @@ public class Main {
 
         session.persist(a1);
         session.persist(client);
-
+        session.persist(concert1);
         arena.setAdress(a2);
 
         session.persist(a2);
