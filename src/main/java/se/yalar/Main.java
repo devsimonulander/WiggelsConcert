@@ -62,7 +62,6 @@ public class Main {
 
         crud.addConcert(c1);
         crud.deleteConcert(4);*/
-/*
         Client c1 = new Client();
         Client c2 = new Client();
         Client c3 = new Client();
@@ -73,7 +72,28 @@ public class Main {
         c3.setFirstName("Kajsa");
         c4.setFirstName("Olle");
         c5.setFirstName("Sofia");
+        c1.setLastName("Andersson");
+        c2.setLastName("Oskarsson");
+        c3.setLastName("Malm");
+        c4.setLastName("Eklund");
+        c5.setLastName("Sjöberg");
+        c1.setBirthday("1989-05-23");
+        c2.setBirthday("1987-06-12");
+        c3.setBirthday("1997-06-08");
+        c4.setBirthday("2000-12-06");
+        c5.setBirthday("1978-05-04");
+        c1.setPhoneNumber("0765884945");
+        c2.setPhoneNumber("0765885946");
+        c3.setPhoneNumber("0965884947");
+        c4.setPhoneNumber("0765888943");
+        c5.setPhoneNumber("0765834944");
+        c1.setAdress(adress1);
+        c2.setAdress(adress1);
+        c3.setAdress(adress2);
+        c4.setAdress(adress2);
+        c5.setAdress(adress3);
 
+/*
         Concert concert = new Concert();
         Concert concert1 = new Concert();
         Concert concert2 = new Concert();
