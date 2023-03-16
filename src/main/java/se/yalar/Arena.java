@@ -2,27 +2,31 @@ package se.yalar;
 
 import jakarta.persistence.*;
 
+import java.util.List;
+
 @Entity
 public class Arena {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private long id;
+    private int arenaId;
     private String name;
     @ManyToOne
     @JoinColumn(name = "adressId")
     private Adress adress;
     private String type; // Ex: inside/outside/etc...
+    @OneToMany(targetEntity = Concert.class, mappedBy = "concert", cascade = CascadeType.ALL)
+    private List<Concert> concerts;
 
     public Arena() {
 
     }
 
-    public long getId() {
-        return id;
+    public int getId() {
+        return arenaId;
     }
 
-    public void setId(long id) {
-        this.id = id;
+    public void setId(int Arenaid) {
+        this.arenaId = arenaId;
     }
 
     public String getName() {
@@ -47,5 +51,13 @@ public class Arena {
 
     public void setAdress(Adress adress) {
         this.adress = adress;
+    }
+
+    public List<Concert> getConcert() {
+        return concerts;
+    }
+
+    public void setConcert(List<Concert> concerts) {
+        this.concerts = concerts;
     }
 }

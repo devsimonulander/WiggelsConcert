@@ -3,40 +3,49 @@ package se.yalar;
 import jakarta.persistence.*;
 
 import java.sql.Date;
-import java.util.ArrayList;
-import java.util.List;
 
 @Entity
 public class Concert {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private int id;
-    private String artist_name;
-    private Date date;
+    private int concertId;
+    private String artistName;
+    private Date concertDate;
     private int price;
     private int age_limit;
-    private String arena;
-    @ManyToMany
-    @JoinTable(name = "WC",
-    joinColumns = {@JoinColumn(name = "ConcertId")},
-    inverseJoinColumns = {@JoinColumn(name = "ClientId")})
-    private List<Client> clients = new ArrayList<>();
 
-    public String getArtist_name() {
-        return artist_name;
+    @ManyToOne
+    @JoinColumn(name = "arenaId")
+    private Arena arena;
+
+    public Concert() {
     }
 
-    public void setArtist_name(String artist_name) {
-        this.artist_name = artist_name;
+    public Concert(String artistName, Date concertDate, int price,Arena arena, int age_limit) {
+        this.artistName = artistName;
+        this.concertDate = concertDate;
+        this.price = price;
+        this.arena = arena;
+        this.age_limit = age_limit;
+    }
+
+
+    public String getArtistName() {
+        return artistName;
+    }
+
+    public void setArtistName(String artistName) {
+        this.artistName = artistName;
     }
 
     public Date getDate() {
-        return date;
+        return concertDate;
     }
 
-    public void setDate(Date date) {
-        this.date = date;
+    public void setDate(String date) {
+        Date concertDate = Date.valueOf(date);
+        this.concertDate = concertDate;
     }
 
     public int getPrice() {
@@ -55,37 +64,28 @@ public class Concert {
         this.age_limit = age_limit;
     }
 
-    public String getArena() {
+    public Arena getArena() {
         return arena;
     }
 
-    public void setArena(String arena) {
+    public void setArena(Arena arena) {
         this.arena = arena;
     }
 
-    public void setId(int id) {
-        this.id = id;
+    public void setConcertId(int id) {
+        this.concertId = id;
     }
-    public int getId() {
-        return id;
+    public int getConcertId() {
+        return concertId;
     }
-
-    public List<Client> getClients() {
-        return clients;
-    }
-
-    public void setClients(List<Client> clients) {
-        this.clients = clients;
-    }
-
     @Override
     public String toString() {
         return "Concert{" +
-                "id=" + id +
-                ", artist_name='" + artist_name + '\'' +
-                ", date=" + date +
-                ", price=" + price +
-                ", age_limit=" + age_limit +
+                "id=" + concertId +
+                ", artist namn: ='" + artistName + '\'' +
+                ", datum " + concertDate +
+                ", pris " + price +
+                ", åldersgräns: " + age_limit +
                 ", arena='" + arena + '\'' +
                 '}';
     }
