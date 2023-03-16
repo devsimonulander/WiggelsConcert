@@ -5,9 +5,6 @@ target/
 
 # pom.xml
 
-src/main/resources/hibernate.cfg.xml
-work
-
 ### IntelliJ IDEA ###
 .idea/modules.xml
 .idea/jarRepositories.xml

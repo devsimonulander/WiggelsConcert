@@ -29,6 +29,12 @@ public class Gameloop {
     }
 
     public void showMenu(){
+        System.out.println("-------------------------");
+        System.out.println("|   Wigell Concerts     |");
+        System.out.println("|  Concerts and events  |");
+        System.out.println("-------------------------");
+        System.out.println("");
+
         System.out.println("Menu:");
         System.out.println("1.");
         System.out.println("2.");
@@ -38,10 +44,10 @@ public class Gameloop {
 
     public void action(String action){
         switch(action){
-         /*   case 1:
-            case 2:
-            case 3:
-            case 4:*/
+            case "1":
+            case "2":
+            case "3":
+            case "4":
             default: break;
         }
     }
