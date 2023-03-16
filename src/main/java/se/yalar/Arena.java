@@ -21,6 +21,12 @@ public class Arena {
 
     }
 
+    public Arena(String name, Adress adress, String type) {
+        this.name = name;
+        this.adress = adress;
+        this.type = type;
+    }
+
     public int getId() {
         return arenaId;
     }
