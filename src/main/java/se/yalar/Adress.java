@@ -24,6 +24,10 @@ public class Adress {
     }
 
     public Adress(String street, int houseNumber, int zipCode, String city) {
+        this.street = street;
+        this.houseNumber = houseNumber;
+        this.zipCode = zipCode;
+        this.city = city;
     }
 
     public int getAdressId() {

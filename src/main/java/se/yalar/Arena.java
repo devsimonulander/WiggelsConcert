@@ -14,7 +14,7 @@ public class Arena {
     @JoinColumn(name = "adressId")
     private Adress adress;
     private String type; // Ex: inside/outside/etc...
-    @OneToMany(targetEntity = Concert.class, mappedBy = "concert", cascade = CascadeType.ALL)
+    @OneToMany(targetEntity = Concert.class, mappedBy = "arena", cascade = CascadeType.ALL)
     private List<Concert> concerts;
 
     public Arena() {

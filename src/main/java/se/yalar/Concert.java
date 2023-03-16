@@ -3,6 +3,8 @@ package se.yalar;
 import jakarta.persistence.*;
 
 import java.sql.Date;
+import java.util.ArrayList;
+import java.util.List;
 
 @Entity
 public class Concert {
@@ -19,12 +21,18 @@ public class Concert {
     @JoinColumn(name = "arenaId")
     private Arena arena;
 
+    @ManyToMany
+    @JoinTable(name = "WC",
+            joinColumns = {@JoinColumn(name = "ConcertId")},
+            inverseJoinColumns = {@JoinColumn(name = "ClientId")})
+    private List<Client> clients = new ArrayList<>();
+
     public Concert() {
     }
 
-    public Concert(String artistName, Date concertDate, int price,Arena arena, int age_limit) {
+    public Concert(String artistName, String date, int price,Arena arena, int age_limit) {
         this.artistName = artistName;
-        this.concertDate = concertDate;
+        this.concertDate = Date.valueOf(date);
         this.price = price;
         this.arena = arena;
         this.age_limit = age_limit;
@@ -78,6 +86,15 @@ public class Concert {
     public int getConcertId() {
         return concertId;
     }
+
+    public List<Client> getClients() {
+        return clients;
+    }
+
+    public void setClients(List<Client> clients) {
+        this.clients = clients;
+    }
+
     @Override
     public String toString() {
         return "Concert{" +

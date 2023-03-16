@@ -38,10 +38,10 @@ public class Gameloop {
 
     public void action(String action){
         switch(action){
-            case 1:
+         /*   case 1:
             case 2:
             case 3:
-            case 4:
+            case 4:*/
             default: break;
         }
     }
