@@ -25,9 +25,10 @@ public class Gameloop {
         while (!isDone) {
             System.out.println(message);
             System.out.print("> ");
-            int input = scan.nextInt();
-                if(input > 0) {
-                    return input;
+            String input = scan.nextLine();
+            int output = Integer.parseInt(input);
+                if(output > 0) {
+                    return output;
                 }
             System.out.println("Invalid input!");
         }
