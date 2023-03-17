@@ -26,6 +26,13 @@ public class Client {
 
 
     public Client(){}
+    public Client(String firstName, String lastName, String date, String phoneNumber, Adress adress){
+        this.firstName = firstName;
+        this.lastName = lastName;
+        this.birthday = Date.valueOf(date);
+        this.phoneNumber = phoneNumber;
+        this.adress = adress;
+    }
 
     public int getClientId() {
         return clientId;

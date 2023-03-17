@@ -64,7 +64,8 @@ public class Gameloop {
         System.out.println("1. Aktuella konserter");
         System.out.println("2. Köpa biljett");
         System.out.println("3. Ändra användaruppgifter");
-        System.out.println("4. Avsluta");
+        System.out.println("4. Avboka biljett");
+        System.out.println("5. Avsluta");
 
     }
 
@@ -85,10 +86,12 @@ public class Gameloop {
                 System.out.println("Du har valt " + crud.getConcertById(in));
                 break;
             case 3:
+                crud = new CRUD(sessionFactory);
                 String street = c.getAdress().getStreet();
                 int houseNum = c.getAdress().getHouseNumber();
                 int zip = c.getAdress().getZipCode();
                 String city = c.getAdress().getCity();
+                scan.nextLine();
                 System.out.println("Ange förnamn");
                 String name = scan.nextLine();
                 System.out.println("Ange efternamn");
@@ -96,8 +99,16 @@ public class Gameloop {
                 System.out.println("Ange telefonnummer");
                 String phone = scan.nextLine();
                 crud.updateClient(c.getClientId(), name, lastName, phone, street, houseNum, zip, city);
+                System.out.println("Dina användaruppgifter är uppdaterade");
                 break;
             case 4:
+                System.out.println("Ange konsert id");
+                crud = new CRUD(sessionFactory);
+                int in2 = scan.nextInt();
+                crud.deleteTicket(c.getClientId(), in2);
+                System.out.println("Du har avbokat din biljett");
+                break;
+            case 5:
                 run = false;
                 break;
             default: break;
@@ -151,7 +162,8 @@ public class Gameloop {
 
             System.out.println("Menu:");
             System.out.println("1. Lista bokningar");
-            System.out.println("2. Avsluta");
+            System.out.println("2. Administrera");
+            System.out.println("3. Avsluta");
             int choice = scan.nextInt();
             switch(choice){
                 case 1:
@@ -167,15 +179,114 @@ public class Gameloop {
                     System.out.println(" ");
                     break;
                 case 2:
+                    administration(sessionFactory);
+                    break;
+                case 3:
                     ok = false;
                     run = false;
                     break;
             }
         }
+    }
+    public void administration(SessionFactory sessionFactory){
+        System.out.println("1. Lägg till konsert");
+        System.out.println("2. Ta bort konsert");
+        System.out.println("3. Lägg till arena");
+        System.out.println("4. Ta bort arena");
+        System.out.println("5. Lägg till kund");
+        System.out.println("6. Ta bort kund");
 
-
-
-
+        int choice = scan.nextInt();
+        switch(choice){
+            case 1:
+                crud = new CRUD(sessionFactory);
+                scan.nextLine();
+                System.out.println("Ange artistnamn");
+                String artist = scan.nextLine();
+                System.out.println("Ange datum");
+                String date = scan.nextLine();
+                System.out.println("Ange pris");
+                int price = scan.nextInt();
+                System.out.println("Ange arena id");
+                int id = scan.nextInt();
+                System.out.println("Ange åldersgräns");
+                int age = scan.nextInt();
+                Arena arena = crud.getArenaById(id);
+                Concert concert = new Concert(artist, date, price, arena, age);
+                crud.addConcert(concert);
+                System.out.println("Konserten är tillagd");
+                break;
+            case 2:
+                crud = new CRUD(sessionFactory);
+                System.out.println("Ange konsertens id");
+                int id3 = scan.nextInt();
+                crud.deleteConcert(id3);
+                System.out.println("Konserten är borttagen");
+                break;
+            case 3:
+                scan.nextLine();
+                crud = new CRUD(sessionFactory);
+                System.out.println("Ange namn");
+                String name = scan.nextLine();
+                System.out.println("Ange typ");
+                String type = scan.nextLine();
+                System.out.println("Ange gata");
+                String street = scan.nextLine();
+                System.out.println("Ange husnummer");
+                int houseNumber = scan.nextInt();
+                System.out.println("Ange postnummer");
+                int zipCode = scan.nextInt();
+                scan.nextLine();
+                System.out.println("Ange stad");
+                String city = scan.nextLine();
+                Adress adress = new Adress(street, houseNumber, zipCode, city);
+                crud.addAdress(adress);
+                Arena arena3 = new Arena(name, adress, type);
+                crud.addArena(arena3);
+                System.out.println("Arenan är tillagd");
+                break;
+            case 4:
+                crud = new CRUD(sessionFactory);
+                System.out.println("Ange arenans id");
+                int idA = scan.nextInt();
+                crud.deleteArena(idA);
+                System.out.println("Arenan är borttagen");
+                break;
+            case 5:
+                scan.nextLine();
+                crud = new CRUD(sessionFactory);
+                System.out.println("Ange förnamn");
+                String firstName = scan.nextLine();
+                System.out.println("Ange efternamn");
+                String lastName = scan.nextLine();
+                System.out.println("Ange födelsedatum");
+                String birthday = scan.nextLine();
+                System.out.println("Ange telefonnummer");
+                String phoneNum = scan.nextLine();
+                System.out.println("Ange gata");
+                String street1 = scan.nextLine();
+                System.out.println("Ange husnummer");
+                int houseNumber1 = scan.nextInt();
+                System.out.println("Ange postnummer");
+                int zipCode1 = scan.nextInt();
+                scan.nextLine();
+                System.out.println("Ange stad");
+                String city1 = scan.nextLine();
+                Adress adress1 = new Adress(street1, houseNumber1, zipCode1, city1);
+                crud.addAdress(adress1);
+                Client client = new Client(firstName, lastName, birthday, phoneNum, adress1);
+                crud.addClient(client);
+                System.out.println("Kunden är tillagd");
+                break;
+            case 6:
+                scan.nextLine();
+                crud = new CRUD(sessionFactory);
+                System.out.println("Ange kundens id");
+                int id4 = scan.nextInt();
+                crud.deleteClient(id4);
+                System.out.println("Kunden är borttagen");
+                break;
+        }
     }
 
 }

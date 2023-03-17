@@ -4,6 +4,7 @@ import jakarta.persistence.criteria.CriteriaBuilder;
 import jakarta.persistence.criteria.CriteriaQuery;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
+import org.hibernate.query.Query;
 
 import java.sql.Date;
 import java.util.List;
@@ -105,6 +106,16 @@ public class CRUD {
             session.beginTransaction();
             Concert concert = session.get(Concert.class, concertId);
             concert.getClients().add(client);
+            session.update(concert);
+            session.getTransaction().commit();
+        }
+    }
+    public void deleteTicket(int clientId, int concertId){
+        try(Session session = sessionFactory.openSession()){
+            session.beginTransaction();
+            Concert concert = session.get(Concert.class, concertId);
+            Client client1 = session.get(Client.class, clientId);
+            concert.getClients().remove(client1);
             session.update(concert);
             session.getTransaction().commit();
         }
