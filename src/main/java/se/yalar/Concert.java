@@ -97,13 +97,12 @@ public class Concert {
 
     @Override
     public String toString() {
-        return "Concert{" +
-                "id=" + concertId +
-                ", artist namn: ='" + artistName + '\'' +
+        return "Concert " +
+                "ID = " + concertId +
+                ", Artist: = '" + artistName + '\'' +
                 ", datum " + concertDate +
                 ", pris " + price +
                 ", åldersgräns: " + age_limit +
-                ", arena='" + arena + '\'' +
-                '}';
+                ", arena='" + arena.toString() + '\'';
     }
 }

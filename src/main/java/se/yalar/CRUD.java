@@ -100,6 +100,15 @@ public class CRUD {
             session.getTransaction().commit();
         }
     }
+    public void updateTicket(Client client, int concertId){
+        try(Session session = sessionFactory.openSession()){
+            session.beginTransaction();
+            Concert concert = session.get(Concert.class, concertId);
+            concert.getClients().add(client);
+            session.update(concert);
+            session.getTransaction().commit();
+        }
+    }
 
     public void deleteConcert(int concertId) {
         try (Session session = sessionFactory.openSession()) {

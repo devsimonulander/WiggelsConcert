@@ -10,8 +10,21 @@ import java.util.List;
 
 public class Main {
     public static void main(String[] args) {
-     /*   Gameloop gameloop = new Gameloop();
-        gameloop.start();*/
+
+        SessionFactory sessionFactory;
+        sessionFactory = new Configuration().configure().buildSessionFactory();
+        Session session = sessionFactory.openSession();
+        session.beginTransaction();
+
+        Gameloop gameloop = new Gameloop();
+        gameloop.logIn(sessionFactory);
+        Client admin = new Client();
+        admin.setClientId(99);
+
+        session.persist(admin);
+
+
+
 
 /*        Adress adress1 = new Adress("Paradisäppelvägen", 111, 98765, "Ankeborg");
         Adress adress2 = new Adress("Teatergatan", 18, 11122, "Valleby");
@@ -76,10 +89,9 @@ public class Main {
 
 
 
-        SessionFactory sessionFactory;
-        sessionFactory = new Configuration().configure().buildSessionFactory();
-        Session session = sessionFactory.openSession();
-        session.beginTransaction();
+
+
+
 
       // wc.updateClient(3, "Ida", "Karlsson", "035215886", a2); // Funkar ej
         CRUD crud = new CRUD(sessionFactory);

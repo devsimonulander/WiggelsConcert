@@ -66,4 +66,13 @@ public class Arena {
     public void setConcert(List<Concert> concerts) {
         this.concerts = concerts;
     }
+
+    @Override
+    public String toString() {
+        return "Arena " +
+                ", Namn = '" + name + '\'' + "\n"+
+                " Adress = " + adress + "\n"+
+                " Typ =' " + type + '\''
+                + "\n\n";
+    }
 }

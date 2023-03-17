@@ -6,8 +6,8 @@
   <component name="ChangeListManager">
     <list default="true" id="78fc2f0b-7041-47bc-871f-00d380ac9441" name="Changes" comment="Lagt till mockdata, tagit bort WC">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/se/yalar/Adress.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/se/yalar/Adress.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/se/yalar/Arena.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/se/yalar/Arena.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/se/yalar/CRUD.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/se/yalar/CRUD.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/se/yalar/Concert.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/se/yalar/Concert.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/se/yalar/Gameloop.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/se/yalar/Gameloop.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/se/yalar/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/se/yalar/Main.java" afterDir="false" />
@@ -100,7 +100,7 @@
       <workItem from="1678697024015" duration="4464000" />
       <workItem from="1678702168781" duration="23706000" />
       <workItem from="1678882488072" duration="2051000" />
-      <workItem from="1678954123332" duration="6410000" />
+      <workItem from="1678954123332" duration="16521000" />
     </task>
     <task id="LOCAL-00001" summary="Changed java version.">
       <created>1678265698667</created>
@@ -169,7 +169,13 @@
       <option name="presentableId" value="LOCAL−00011" />
       <updated>1678954218424</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL−00012" summary="Lagt till mockdata, tagit bort WC">
+      <created>1678961032029</created>
+      <option name="number" value="LOCAL−00012" />
+      <option name="presentableId" value="LOCAL−00012" />
+      <updated>1678961032029</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
