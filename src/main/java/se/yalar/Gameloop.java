@@ -90,7 +90,7 @@ public class Gameloop {
     public void start(SessionFactory sessionFactory){
         while (run){
             showMenu();
-            int input = stringInput("",validInput);
+            int input = intInput("");
             action(input, sessionFactory);
         }
     }
