@@ -31,6 +31,12 @@ public class Gameloop {
         return true;
     }
 
+    public String stringInput(String message){
+        System.out.println(message);
+        System.out.print("> ");
+        String input = scan.nextLine();
+        return input;
+    }
     public int intInput(String message) {
         boolean isDone = false;
         char [] numbers = { 0,1, 2, 3, 4, 5, 6,7,8,9 };
