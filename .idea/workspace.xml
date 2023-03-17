@@ -7,7 +7,6 @@
     <list default="true" id="78fc2f0b-7041-47bc-871f-00d380ac9441" name="Changes" comment="Skapat meny">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/se/yalar/Gameloop.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/se/yalar/Gameloop.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/se/yalar/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/se/yalar/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -98,7 +97,7 @@
       <workItem from="1678702168781" duration="23706000" />
       <workItem from="1678882488072" duration="2051000" />
       <workItem from="1678954123332" duration="16521000" />
-      <workItem from="1679039894525" duration="3741000" />
+      <workItem from="1679039894525" duration="6357000" />
     </task>
     <task id="LOCAL-00001" summary="Changed java version.">
       <created>1678265698667</created>
@@ -179,7 +178,13 @@
       <option name="presentableId" value="LOCAL−00013" />
       <updated>1679040098499</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL−00014" summary="Skapat meny">
+      <created>1679043842149</created>
+      <option name="number" value="LOCAL−00014" />
+      <option name="presentableId" value="LOCAL−00014" />
+      <updated>1679043842149</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

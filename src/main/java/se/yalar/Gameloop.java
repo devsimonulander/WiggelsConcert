@@ -19,7 +19,7 @@ public class Gameloop {
         validInput = new int[]{1,2,3,4};
     }
 
-    public int stringInput(String message) {
+    public int intInput(String message) {
         boolean isDone = false;
 
         while (!isDone) {
@@ -72,28 +72,40 @@ public class Gameloop {
     public void start(SessionFactory sessionFactory){
         while (run){
             showMenu();
-            int input = stringInput("",validInput);
+            int input = intInput("");
             action(input, sessionFactory);
         }
     }
-    public void logIn(SessionFactory sessionFactory){
-        Session session = sessionFactory.openSession();
-        System.out.println("Vänligen mata in ditt id");
-        int id = scan.nextInt();
-        c = session.get(Client.class,id);
-        if((c != null)) {
-            System.out.println("Hej och välkommen " +c.getFirstName() + " " +  c.getLastName());
-            start(sessionFactory);
-            }else if(c.getClientId() == 1) {
-            System.out.println("Ange lösenord");
-            int password = scan.nextInt();
-            if(password == 123){
-                admin(sessionFactory);
-        }else {
-                System.out.println("Ingen klient med detta id finns i databasen");
+    public void logIn(SessionFactory sessionFactory) {
+        boolean wh = true;
+        while(wh) {
+            Session session = sessionFactory.openSession();
+            System.out.println("Vänligen mata in ditt id");
+            int id = scan.nextInt();
+            c = session.get(Client.class, id);
+            if (c.getClientId() == 1) {
+                System.out.println("Ange lösenord");
+                int password = scan.nextInt();
+                if (password == 123) {
+                    admin(sessionFactory);
+                    wh = false;
+
+                }
             }
+               else if ((c != null) && (c.getClientId() > 1)) {
+                    System.out.println("Hej och välkommen " + c.getFirstName() + " " + c.getLastName());
+                    start(sessionFactory);
+                    wh = false;
+
+                } else {
+                    System.out.println("Ingen klient med detta id finns i databasen");
+                }
+            }
+
+
         }
-    }
+
+
     public void admin(SessionFactory sessionFactory){
         boolean ok = true;
         while (ok){
