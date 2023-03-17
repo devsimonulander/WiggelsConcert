@@ -39,7 +39,6 @@ public class Gameloop {
     }
     public int intInput(String message) {
         boolean isDone = false;
-        char [] numbers = { 0,1, 2, 3, 4, 5, 6,7,8,9 };
 
         while (!isDone) {
             System.out.println(message);
