@@ -19,6 +19,24 @@ public class Gameloop {
         validInput = new int[]{1,2,3,4};
     }
 
+    public boolean hasOnlyDigits(String str) {
+        if (str == null || str.isEmpty()) {
+            return false;
+        }
+        for (int i = 0; i < str.length(); i++) {
+            if (!Character.isDigit(str.charAt(i))) {
+                return false;
+            }
+        }
+        return true;
+    }
+
+    public String stringInput(String message){
+        System.out.println(message);
+        System.out.print("> ");
+        String input = scan.nextLine();
+        return input;
+    }
     public int intInput(String message) {
         boolean isDone = false;
 
@@ -26,10 +44,10 @@ public class Gameloop {
             System.out.println(message);
             System.out.print("> ");
             String input = scan.nextLine();
-            int output = Integer.parseInt(input);
-                if(output > 0) {
-                    return output;
-                }
+            if (hasOnlyDigits(input)) {
+                return Integer.parseInt(input);
+            }
+
             System.out.println("Invalid input!");
         }
         return 0;
