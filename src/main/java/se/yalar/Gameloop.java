@@ -38,19 +38,19 @@ public class Gameloop {
         return input;
     }
     public int intInput(String message) {
-        boolean isDone = false;
+        //boolean isDone = false;
+        System.out.println(message);
+        System.out.print("> ");
+        return scan.nextInt();
 
-        while (!isDone) {
-            System.out.println(message);
-            System.out.print("> ");
-            String input = scan.nextLine();
+        /*while (!isDone) {
+
             if (hasOnlyDigits(input)) {
                 return Integer.parseInt(input);
             }
 
-            System.out.println("Invalid input!");
-        }
-        return 0;
+            System.out.println("Invalid input!");*/
+
     }
 
     public void showMenu(){
