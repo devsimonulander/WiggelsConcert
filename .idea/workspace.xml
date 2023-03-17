@@ -97,7 +97,7 @@
       <workItem from="1678702168781" duration="23706000" />
       <workItem from="1678882488072" duration="2051000" />
       <workItem from="1678954123332" duration="16521000" />
-      <workItem from="1679039894525" duration="6357000" />
+      <workItem from="1679039894525" duration="12495000" />
     </task>
     <task id="LOCAL-00001" summary="Changed java version.">
       <created>1678265698667</created>
@@ -184,7 +184,13 @@
       <option name="presentableId" value="LOCAL−00014" />
       <updated>1679043842149</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL−00015" summary="Skapat meny">
+      <created>1679046554284</created>
+      <option name="number" value="LOCAL−00015" />
+      <option name="presentableId" value="LOCAL−00015" />
+      <updated>1679046554284</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

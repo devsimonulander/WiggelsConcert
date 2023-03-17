@@ -63,7 +63,9 @@ public class Gameloop {
         System.out.println("Menu:");
         System.out.println("1. Aktuella konserter");
         System.out.println("2. Köpa biljett");
-        System.out.println("3. Avsluta");
+        System.out.println("3. Ändra användaruppgifter");
+        System.out.println("4. Avsluta");
+
     }
 
     public void action(int action, SessionFactory sessionFactory){
@@ -83,6 +85,19 @@ public class Gameloop {
                 System.out.println("Du har valt " + crud.getConcertById(in));
                 break;
             case 3:
+                String street = c.getAdress().getStreet();
+                int houseNum = c.getAdress().getHouseNumber();
+                int zip = c.getAdress().getZipCode();
+                String city = c.getAdress().getCity();
+                System.out.println("Ange förnamn");
+                String name = scan.nextLine();
+                System.out.println("Ange efternamn");
+                String lastName = scan.nextLine();
+                System.out.println("Ange telefonnummer");
+                String phone = scan.nextLine();
+                crud.updateClient(c.getClientId(), name, lastName, phone, street, houseNum, zip, city);
+                break;
+            case 4:
                 run = false;
                 break;
             default: break;
