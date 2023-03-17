@@ -19,18 +19,16 @@ public class Gameloop {
         validInput = new int[]{1,2,3,4};
     }
 
-    public int stringInput(String message, int[] validInputs) {
+    public int stringInput(String message) {
         boolean isDone = false;
 
         while (!isDone) {
             System.out.println(message);
             System.out.print("> ");
             int input = scan.nextInt();
-            for(int i = 0; i < validInputs.length; i++){
-                if(input == validInput[i]){
+                if(input > 0) {
                     return input;
                 }
-            }
             System.out.println("Invalid input!");
         }
         return 0;
