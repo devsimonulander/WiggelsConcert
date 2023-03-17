@@ -4,11 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="78fc2f0b-7041-47bc-871f-00d380ac9441" name="Changes" comment="Lagt till mockdata, tagit bort WC">
+    <list default="true" id="78fc2f0b-7041-47bc-871f-00d380ac9441" name="Changes" comment="Skapat meny">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/se/yalar/Arena.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/se/yalar/Arena.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/se/yalar/CRUD.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/se/yalar/CRUD.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/se/yalar/Concert.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/se/yalar/Concert.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/se/yalar/Gameloop.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/se/yalar/Gameloop.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/se/yalar/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/se/yalar/Main.java" afterDir="false" />
     </list>
@@ -56,29 +53,29 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "import_schema_mapping": "<schema-mapping>\n  <databases>\n    <list>\n      <schema-mapping-item>\n        <source-data-source-id>c6ad3421-b951-457f-b07e-1c3fc94c8d40</source-data-source-id>\n        <source-path>schema/&quot;gruppuppgift&quot;</source-path>\n        <target-data-source-id>c6ad3421-b951-457f-b07e-1c3fc94c8d40</target-data-source-id>\n        <target-path>schema/&quot;gruppuppgift&quot;</target-path>\n      </schema-mapping-item>\n    </list>\n  </databases>\n</schema-mapping>",
-    "last_opened_file_path": "C:/Users/Samsung/IdeaProjects/WiggelsConcert",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "project.structure.last.edited": "Project",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;import_schema_mapping&quot;: &quot;&lt;schema-mapping&gt;\n  &lt;databases&gt;\n    &lt;list&gt;\n      &lt;schema-mapping-item&gt;\n        &lt;source-data-source-id&gt;c6ad3421-b951-457f-b07e-1c3fc94c8d40&lt;/source-data-source-id&gt;\n        &lt;source-path&gt;schema/&amp;quot;gruppuppgift&amp;quot;&lt;/source-path&gt;\n        &lt;target-data-source-id&gt;c6ad3421-b951-457f-b07e-1c3fc94c8d40&lt;/target-data-source-id&gt;\n        &lt;target-path&gt;schema/&amp;quot;gruppuppgift&amp;quot;&lt;/target-path&gt;\n      &lt;/schema-mapping-item&gt;\n    &lt;/list&gt;\n  &lt;/databases&gt;\n&lt;/schema-mapping&gt;&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/Samsung/IdeaProjects/WiggelsConcert&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
-  "keyToStringList": {
-    "DatabaseDriversLRU": [
-      "mysql"
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;mysql&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\Samsung\IdeaProjects\WiggelsConcert46\src\main\resources" />
@@ -101,6 +98,7 @@
       <workItem from="1678702168781" duration="23706000" />
       <workItem from="1678882488072" duration="2051000" />
       <workItem from="1678954123332" duration="16521000" />
+      <workItem from="1679039894525" duration="3741000" />
     </task>
     <task id="LOCAL-00001" summary="Changed java version.">
       <created>1678265698667</created>
@@ -175,7 +173,13 @@
       <option name="presentableId" value="LOCAL−00012" />
       <updated>1678961032029</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL−00013" summary="Skapat meny">
+      <created>1679040098499</created>
+      <option name="number" value="LOCAL−00013" />
+      <option name="presentableId" value="LOCAL−00013" />
+      <updated>1679040098499</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -202,6 +206,7 @@
     <MESSAGE value="Lagt till förhållanden igen" />
     <MESSAGE value="Fixat allt" />
     <MESSAGE value="Lagt till mockdata, tagit bort WC" />
-    <option name="LAST_COMMIT_MESSAGE" value="Lagt till mockdata, tagit bort WC" />
+    <MESSAGE value="Skapat meny" />
+    <option name="LAST_COMMIT_MESSAGE" value="Skapat meny" />
   </component>
 </project>

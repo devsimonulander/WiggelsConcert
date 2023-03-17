@@ -47,7 +47,6 @@ public class Gameloop {
         System.out.println("1. Aktuella konserter");
         System.out.println("2. Köpa biljett");
         System.out.println("3. Avsluta");
-        System.out.println("4.");
     }
 
     public void action(int action, SessionFactory sessionFactory){
@@ -58,15 +57,17 @@ public class Gameloop {
                 for(int i = 0; i < conserts.size(); i++){
                     System.out.println(conserts.get(i).toString());
                 }
+                break;
             case 2:
                 System.out.println("Ange konsert id");
                 crud = new CRUD(sessionFactory);
                 int in = scan.nextInt();
                 crud.updateTicket(c, in);
                 System.out.println("Du har valt " + crud.getConcertById(in));
+                break;
             case 3:
                 run = false;
-            case 4:
+                break;
             default: break;
         }
     }
@@ -82,10 +83,10 @@ public class Gameloop {
         System.out.println("Vänligen mata in ditt id");
         int id = scan.nextInt();
         c = session.get(Client.class,id);
-        if((c != null)||(c.getClientId() < 99) ) {
-            System.out.println("hej och välkommen " +c.getFirstName() + " " +  c.getLastName());
+        if((c != null)) {
+            System.out.println("Hej och välkommen " +c.getFirstName() + " " +  c.getLastName());
             start(sessionFactory);
-            } else if(c.getClientId() == 99) {
+            }else if(c.getClientId() == 1) {
             System.out.println("Ange lösenord");
             int password = scan.nextInt();
             if(password == 123){
@@ -96,15 +97,41 @@ public class Gameloop {
         }
     }
     public void admin(SessionFactory sessionFactory){
-        Session session = sessionFactory.openSession();
-        Query query = session.createQuery("FROM Concert");
-        List<Concert> result = query.list();
-        for(Concert o : result){
-            System.out.println(o.getArtistName() + " har följande kunder");
-            for(int i = 0; i < o.getClients().size(); i++){
-                System.out.println(o.getClients().get(i).getFirstName());
+        boolean ok = true;
+        while (ok){
+            System.out.println("-------------------------");
+            System.out.println("|   Wigell Concerts     |");
+            System.out.println("|  Concerts and events  |");
+            System.out.println("-------------------------");
+            System.out.println("");
+
+            System.out.println("Menu:");
+            System.out.println("1. Lista bokningar");
+            System.out.println("2. Avsluta");
+            int choice = scan.nextInt();
+            switch(choice){
+                case 1:
+                    Session session = sessionFactory.openSession();
+                    Query query = session.createQuery("FROM Concert");
+                    List<Concert> result = query.list();
+                    for(Concert o : result){
+                        System.out.println(o.getArtistName() + " har följande kunder");
+                        for(int i = 0; i < o.getClients().size(); i++){
+                            System.out.println(o.getClients().get(i).getFirstName());
+                        }
+                    }
+                    System.out.println(" ");
+                    break;
+                case 2:
+                    ok = false;
+                    run = false;
+                    break;
             }
         }
+
+
+
+
     }
 
 }
